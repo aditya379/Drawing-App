@@ -1,0 +1,41 @@
+body{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    height: 96vh;
+    margin: 0;
+}
+
+canvas{
+    border: 2px solid #000;
+}
+
+.color-dots-container {
+    display: flex;
+    justify-content: center;
+    margin-top: 20px; /* Adjust margin as needed */
+}
+
+.color-dot {
+    width: 20px;
+    height: 20px;
+    border-radius: 50%;
+    margin: 0 5px;
+    cursor: pointer;
+}
+
+.eraser-button {
+    margin-top: 10px; /* Adjust margin as needed */
+    cursor: pointer;
+}
+
+@media only screen and (max-width: 600px) {
+    .color-dots-container {
+        align-items: center;
+    }
+
+    .color-dot {
+        margin: 5px 0;
+    }
+}
